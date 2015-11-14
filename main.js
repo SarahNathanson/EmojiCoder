@@ -1,20 +1,21 @@
 var stack=new Array();//create the stack
-var button = document.getElementById("buttonid");
-var code = document.getElementById("codeid");
-var output = document.getElementById("outputid");
-button.addEventListener("click", compileCode());
+var button = document.getElementById("button");
+var code = document.getElementById("code");
+var output = document.getElementById("output");
+button.addEventListener("click", compileCode);
 //tests
 /*compileLine("👇🌚🌝🌚🌚🌚🌚🌚🌝");
 compileLine("👆");*/
 function compileCode(){
-	var scriptArray=code.innerHTML.split("\n");
+	code = document.getElementById("code");
+	console.log(code.value);
+	var scriptArray=code.value.split("\n");
 	for(var i=0;i<scriptArray.length;i++){
 		compileLine(scriptArray[i]);
 	}
 }
 
 function compileLine(script){
-	
 	var command=script.slice(0,2);//emoji representation is 2 chars long
 	var emojiParam=script.slice(2);//parameter is everything after first emoji
 	var parameter="";
@@ -25,13 +26,21 @@ function compileLine(script){
 	console.log("Command: "+command);
 	console.log("Parameter: "+parameter);
 
-	if(command == "👇"){
+	if(command == "👇"){//push onto stack
 		console.log("push");
 		stack.push(parameter);
-	}else if(command=="👆"){
+	}else if(command=="👆"){//pop from stack
 		console.log("pop");
 		var x=stack.pop();
 		console.log(x);
+	}else if(command=="✋"){//output top item from stack
+
+	}else if(command=="👋"){//output param
+
+	}
+	else{
+		console.log("Incorrect command");
+		//ADD THROWS AN ERROR IN USER OUTPUT
 	}
 }
 

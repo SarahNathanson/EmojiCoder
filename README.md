@@ -7,6 +7,10 @@ Commands:
 👇: push onto the stack
 👆: pop off the stack
 
+To be added:
+✋: output top item on stack
+👋:	output parameter
+
 Parameters:
 As binary where 🌚=0 and 🌝=1
 Ex: 🌚🌝🌚🌚🌚🌚🌚🌝
