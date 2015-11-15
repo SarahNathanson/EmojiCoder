@@ -3,20 +3,18 @@ var button = document.getElementById("button");
 var code = document.getElementById("code");
 var output = document.getElementById("output");
 var accumulator=0;
-var x=0;
+var x=0;//temp for nums
 var stringBuilder="";
 button.addEventListener("click", compileCode);
 function compileCode(){
 output.value="";
 var scriptArray=code.value.split("\n");
 for(var i=0;i<scriptArray.length;i++){
-var mute=compileLine(scriptArray[i]);
-if(mute){
-	i++;
+var effect=compileLine(scriptArray[i],i,scriptArray);
+	i+=effect;
 }
 }
-}
-function compileLine(script){
+function compileLine(script,lineNum,scriptArray){
 var command=script.slice(0,2);//emoji representation is 2 chars long
 var modifier=script.slice(2,4);
 var emojiParam=script.slice(4,20);//parameter is everything after first emoji
@@ -91,21 +89,48 @@ else if(command=="🚦"){//set x to top of stack
 }else if(command=="📪"){//output x
 	console.log("X is "+x);
 	output.value+=x;
-}else if("🔛"){//compare x to accumulator //binary 0 for < 1 for = 2 for >
+}else if(command=="🔛"){//compare x to accumulator //binary 0 for < 1 for = 2 for >
 	console.log(parameter);
 	if(parameter==0){ //x < accumulator
-		return !(x<accumulator);//will mute next line if true
+		if(x<accumulator){
+			return 0;
+		}else{
+			return 1
+		}
 	}else if(parameter==1){ //x equals accumulator
-		return !(x==accumulator);//will mute next line if true
+		if(x==accumulator){
+			return 0;
+		}else{
+			return 1
+		}
 	}else if(parameter==2){//x > accumulator
-		return !(x>accumulator);//will mute next line if true
+		if(x>accumulator){
+			return 0;
+		}else{
+			return 1
+		}
 	}
+}//need to update read me starting here
+else if(command=="🔁"){//repeat next line [param] times
+	console.log("here");
+	for(var tired=0;tired<parameter-1;tired++){
+		console.log("loop");
+		var temp=compileLine(scriptArray[lineNum+1],lineNum,scriptArray);
+	}
+}else if(command=="📧"){//set stringbuilder to [param]
+	stringbuilder=parameter;
+}else if(command=="📥"){//add [param] to stringbuilder
+	stringbuilder+=parameter;
+}else if(command=="📤"){//remove last char from stringbuilder
+	stringbuilder=stringbuilder.slice(0,stringbuilder.length-1);
+}else if(command=="📨"){//output stringbuilder
+	output.value+=stringbuilder;
 }
 else{
 console.log("Incorrect command");
 //ADD THROWS AN ERROR IN USER OUTPUT
 }
-return false;
+return 0;
 }
 
 function numToParameter(emojiParam){

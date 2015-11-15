@@ -63,7 +63,16 @@ Commands:
 
 	if statement is true, compile next line else skip
 
- 
+🔁: repeat next line [param] times
+
+📧: set stringbuilder to [param]
+
+📥: add [param] to stringbuilder
+
+📤: remove last character from stringbuilder
+
+📨: output stringbuilder
+
 Modifers:
 
 🔡: Ascii Character 0-255
@@ -82,6 +91,19 @@ Ex: 🌚🌝🌚🌚🌚🌚🌚🌝
 	=65
 
 	="A"
+
+
+Variable Reference:
+
+Stack: An implementation of a stack
+
+	Has operations push and pop
+
+Accumulator: Used to store and do arithmetic on a number
+
+X: Used to temporarily store a number
+
+String builder: Used to store and build up a string
 
 
 Comments:
