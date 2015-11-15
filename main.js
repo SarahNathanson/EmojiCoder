@@ -69,3 +69,4 @@ function binaryToParameter(emojiParam){ //🌝=1 🌚=0
 	}
 	
 }
+
