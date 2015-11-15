@@ -4,6 +4,7 @@
 		<title>EmojiCoder</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="button.css">
 		<link href="linedtextarea.css" type="text/css" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="linedtextarea.js"></script>
@@ -19,7 +20,7 @@
 			<script type="text/javascript">
 				$("#code").linedtextarea();
 			</script>
-			<button id="button" class="compile">Compile</button><br><br>
+			<a id="button" href="#" class="button blue" onclick="compileCode();">Compile</a><br><br>
 			Output:<br>
 			<textarea id="output" rows=20 cols=50 readonly=true></textarea>
 			<script src="main.js"></script>
