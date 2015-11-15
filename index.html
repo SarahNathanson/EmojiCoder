@@ -4,8 +4,10 @@
 		<title>EmojiCoder</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="linedtextarea.css" type="text/css" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="autosize.js"></script>
+		<script type="text/javascript" src="linedtextarea.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -16,6 +18,7 @@
 			Code:<br>
 			<textarea id="code" class="code" rows="10"></textarea><br>
 			<script type="text/javascript">
+				$("#code").linedtextarea();
 				autosize($("#code"));
 			</script>
 			<button id="button" class="compile">Compile</button><br>
