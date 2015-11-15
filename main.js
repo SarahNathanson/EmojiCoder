@@ -1,4 +1,5 @@
 var button = document.getElementById("button");
+var button2=  document.getElementById("button2");
 var code = document.getElementById("code");
 var output = document.getElementById("output");
 var outputcontainer = document.getElementById("outputcontainer");
@@ -190,6 +191,7 @@ return "Incorrect param";
 }
 
 function downloadFile() {
+	console.log("called");
 	var filename="code.txt";
 	var text=code.value;
   var element = document.createElement('a');
@@ -203,3 +205,21 @@ function downloadFile() {
 
   document.body.removeChild(element);
 }
+
+function handleFiles(){
+	var file = document.getElementById('myFile').files[0];
+	if (file) {
+	console.log(file.name);
+    var reader = new FileReader();
+    reader.readAsText(file, "UTF-8");
+    reader.onload = function (evt) {
+        //document.getElementById("fileContents").innerHTML = evt.target.result;
+        console.log(evt.target.result);
+        code.value=evt.target.result;
+    }
+    reader.onerror = function (evt) {
+        console.log("error");
+    }
+}
+}
+
