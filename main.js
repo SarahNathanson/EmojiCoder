@@ -133,6 +133,10 @@ else if(command=="🔁"){//repeat next line [param] times
 	stringbuilder=stringbuilder.slice(0,stringbuilder.length-1);
 }else if(command=="📨"){//output stringbuilder
 	output.value+=stringbuilder;
+}else if(command=="🙈"){//pushes random num zero to param on to stack
+	stack.push(Math.round(Math.random()*parameter));
+}else if(command=="🙉"){//sets x to random num zero to param
+	x=Math.round(Math.random()*parameter);
 }
 else{
 console.log("Incorrect command");

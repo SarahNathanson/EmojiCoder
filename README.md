@@ -37,7 +37,7 @@ Commands:
 
 🚥: push x on to stack
 
-🚦: add x to the top of stack
+🚦: set x to the top of stack
 
 🔹: set x to accumulator
 
@@ -72,6 +72,10 @@ Commands:
 📤: remove last character from stringbuilder
 
 📨: output stringbuilder
+
+🙈: pushes random num zero to [param] on to stack
+
+🙉: sets x to random num zero to param
 
 Modifers:
 
