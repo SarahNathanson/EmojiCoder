@@ -205,3 +205,21 @@ function downloadFile() {
 
   document.body.removeChild(element);
 }
+
+function handleFiles(){
+	var file = document.getElementById('myFile').files[0];
+	if (file) {
+	console.log(file.name);
+    var reader = new FileReader();
+    reader.readAsText(file, "UTF-8");
+    reader.onload = function (evt) {
+        //document.getElementById("fileContents").innerHTML = evt.target.result;
+        console.log(evt.target.result);
+        code.value=evt.target.result;
+    }
+    reader.onerror = function (evt) {
+        console.log("error");
+    }
+}
+}
+
