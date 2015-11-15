@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
 	padding: 0;
 	margin: 0 auto;
+	font: 1em "Open Sans";
 }
 .header {
 	padding: 0.5em;
@@ -19,10 +21,12 @@ h1 {
 	font-weight: 400;
 	font-size: 0.5em;
 }
-.code {
+.container {
 	width: 90%;
 	margin-left: 5%;
-	margin-top: 2em;
+}
+.code {
+	width: 100%;
 	resize: none;
 	overflow: auto;
 }

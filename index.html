@@ -12,14 +12,16 @@
 			<h1>EmojiCoder<span class="title2"> demo</span></h1>
 		</div>
 		<br>
-		Code:<br>
-		<textarea id="code" class="code" rows="10"></textarea><br>
-		<script type="text/javascript">
-			autosize($("#code"));
-		</script>
-		<button id="button">Compile</button><br>
-		Output:<br>
-		<textarea id="output" rows=20 cols=50 readonly=true></textarea>
-		<script src="main.js"></script>
+		<div class="container">
+			Code:<br>
+			<textarea id="code" class="code" rows="10"></textarea><br>
+			<script type="text/javascript">
+				autosize($("#code"));
+			</script>
+			<button id="button" class="compile">Compile</button><br>
+			Output:<br>
+			<textarea id="output" rows=20 cols=50 readonly=true></textarea>
+			<script src="main.js"></script>
+		</div>
 	</body>
 </html>
