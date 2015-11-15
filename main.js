@@ -191,6 +191,7 @@ return "Incorrect param";
 }
 
 function downloadFile() {
+	console.log("called");
 	var filename="code.txt";
 	var text=code.value;
   var element = document.createElement('a');
