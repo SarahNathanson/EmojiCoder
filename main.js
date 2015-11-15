@@ -137,6 +137,8 @@ else if(command=="🔁"){//repeat next line [param] times
 	stack.push(Math.round(Math.random()*parameter));
 }else if(command=="🙉"){//sets x to random num zero to param
 	x=Math.round(Math.random()*parameter);
+}else if(command=="🦄"){
+	output.value+="🦄";
 }
 else{
 console.log("Incorrect command");
