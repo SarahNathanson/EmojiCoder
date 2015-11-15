@@ -1,12 +1,16 @@
-var stack=new Array();//create the stack
 var button = document.getElementById("button");
 var code = document.getElementById("code");
 var output = document.getElementById("output");
+var stack=new Array();//create the stack
 var accumulator=0;
 var x=0;//temp for nums
 var stringBuilder="";
 button.addEventListener("click", compileCode);
 function compileCode(){
+stack=new Array();//create the stack
+accumulator=0;
+x=0;//temp for nums
+stringBuilder="";
 output.value="";
 var scriptArray=code.value.split("\n");
 for(var i=0;i<scriptArray.length;i++){
