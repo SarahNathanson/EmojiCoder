@@ -23,7 +23,7 @@ Commands:
 
 ➗ : divide accumulator by [param]
 
-✖ : mulitply accumulator by [param]
+✖ : multiply accumulator by [param]
 
 📫: output accumulator
 
