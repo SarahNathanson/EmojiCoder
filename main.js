@@ -1,4 +1,5 @@
 var button = document.getElementById("button");
+var button2=  document.getElementById("button2");
 var code = document.getElementById("code");
 var output = document.getElementById("output");
 var outputcontainer = document.getElementById("outputcontainer");
