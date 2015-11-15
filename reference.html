@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EmojiCoder</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+			<h1>EmojiCoder<span class="title2"> reference</span></h1>
+		</div>
+<div class="container">
+Lines of code are formatted as [command][modifier][parameter][new-line]
+<br>
+<br>
+Commands:
+<br>
+👇: push [param] on to the stack
+<br>
+👆: pop off the stack
+<br>
+✋: output top item on stack
+<br>
+👋:	output [param] 
+<br>
+📦: set accumulator [param]
+<br>
+➕ : add [param] to accumulator 
+<br>
+➖ : subtract [param] from accumulator 
+<br>
+➗ : divide accumulator by [param]
+<br>
+✖ : mulitply accumulator by [param]
+<br>
+📫: output accumulator
+<br>
+📝: output newline
+<br>
+🔻: push accumulator on to the stack
+<br>
+🔺: set accumulator to the top of the stack
+<br>
+🎒: set x to [param]
+<br>
+🚥: push x on to stack
+<br>
+🚦: add x to the top of stack
+<br>
+🔹: set x to accumulator
+<br>
+🔸: set accumulator to x
+<br>
+➕✖: add x to accumulator 
+<br>
+➖✖: subtract x from accumulator 
+<br>
+➗✖: divide accumulator by x
+<br>
+✖✖: mulitply accumulator by x
+<br>
+📪: output x
+<br>
+🔛: compares x to a
+<br>
+		~if param=0 in binary, &lt;
+<br>
+		~if param=1 in binary, =
+<br>
+		~if param=2 in binary, &gt;
+<br>
+		~if statement is true, compile next line else skip
+<br>
+🔁: repeat next line [param] times
+<br>
+📧: set stringbuilder to [param]
+<br>
+📥: add [param] to stringbuilder
+<br>
+📤: remove last character from stringbuilder
+<br>
+📨: output stringbuilder
+<br>
+<br>
+Modifers:
+<br>
+🔡: Ascii Character 0-255
+<br>
+🔢: Integer Number 0-255
+<br>
+<br>
+Parameters:
+<br>
+As binary where 🌚=0 and 🌝=1
+<br>
+Ex: 🌚🌝🌚🌚🌚🌚🌚🌝
+<br>
+	=0100 0001
+<br>
+	=65
+<br>
+	="A"
+<br>
+<br>
+Variable Reference:
+<br>
+Stack: An implementation of a stack
+<br>
+	Has operations push and pop
+<br>
+Accumulator: Used to store and do arithmetic on a number
+<br>
+X: Used to temporarily store a number
+<br>
+String builder: Used to store and build up a string
+<br>
+<br>
+Comments:
+<br>
+Comments are in progress
+<br>
+On lines which take parameters putting //comment on the end is ok
+</div>
+	</body>
+</html>
