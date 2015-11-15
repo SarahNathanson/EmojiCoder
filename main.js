@@ -1,12 +1,15 @@
 var button = document.getElementById("button");
 var code = document.getElementById("code");
 var output = document.getElementById("output");
+var outputcontainer = document.getElementById("outputcontainer");
 var stack=new Array();//create the stack
 var accumulator=0;
 var x=0;//temp for nums
 var stringBuilder="";
 button.addEventListener("click", compileCode);
+	outputcontainer.style.display = "none";
 function compileCode(){
+	outputcontainer.style.display = "inline";
 stack=new Array();//create the stack
 accumulator=0;
 x=0;//temp for nums

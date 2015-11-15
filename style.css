@@ -7,15 +7,24 @@ body {
 	font: 1em "Open Sans";
 }
 .header {
-	padding: 0.5em;
+	padding: 0.5em 0 0.5em;
 	width: 100%;
 	background-color: #eee;
 	border-bottom: 0.1em solid #bbb;
+	overflow: auto;
+}
+.navbar {
+	float: right;
+	position: relative;
+	margin-right: 1em;
+	font-size: 0.8em;
 }
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	margin: 0 auto;
+	float: left;
+	margin-left: 0.5em;
 }
 .title2 {
 	font-weight: 400;
