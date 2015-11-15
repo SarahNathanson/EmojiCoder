@@ -6,6 +6,7 @@ Lines of code are formatted as [command][modifier][parameter][new-line]
 
 
 Commands:
+
 👇: push [param] on to the stack
 
 👆: pop off the stack
