@@ -1,0 +1,16 @@
+📦🔢🌚🌝🌚🌚🌝🌚🌚🌚 \\put 72 in accumulator
+📫
+📝
+➕ 🔢🌚🌚🌚🌚🌚🌚🌝🌝 \\add 3 to accumulator
+📫
+📝
+➖ 🔢🌚🌚🌝🌚🌚🌚🌝🌝 \\subtract 35 from accumulator
+📫
+📝
+✖ 🔢🌚🌚🌚🌚🌚🌚🌝🌚 \\multiply accumulator by 2
+📫
+📝
+
+➗ 🔢🌚🌚🌚🌚🌚🌚🌝🌝\\divide accumulator by 3
+📫
+📝

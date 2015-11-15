@@ -1,0 +1,50 @@
+🎒🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\set x to zero
+👋🔡🌚🌝🌚🌝🌝🌚🌚🌚 \\print x
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📪
+📝
+📦🔢🌚🌚🌚🌚🌚🌚🌚🌝 \\set accumulator to 1
+👋🔡🌚🌝🌚🌚🌚🌚🌚🌝 \\print a 01000001
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📫
+📝
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\x<a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌚 \\print <
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌝 \\x=a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌝 \\print =
+🔛🔢🌚🌚🌚🌚🌚🌚🌝🌚 \\x>a
+👋🔡🌚🌚🌝🌝🌝🌝🌝🌝 \\print >
+📝
+🎒🔢🌚🌚🌚🌚🌚🌚🌚🌝 \\set x to one
+👋🔡🌚🌝🌚🌝🌝🌚🌚🌚 \\print x
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📪
+📝
+📦🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\set accumulator to 0
+👋🔡🌚🌝🌚🌚🌚🌚🌚🌝 \\print a 01000001
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📫
+📝
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\x<a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌚 \\print <
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌝 \\x=a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌝 \\print =
+🔛🔢🌚🌚🌚🌚🌚🌚🌝🌚 \\x>a
+👋🔡🌚🌚🌝🌝🌝🌝🌝🌚 \\print >
+📝
+🎒🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\set x to zero
+👋🔡🌚🌝🌚🌝🌝🌚🌚🌚 \\print x
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📪
+📝
+📦🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\set accumulator to zero
+👋🔡🌚🌝🌚🌚🌚🌚🌚🌝 \\print a 01000001
+👋🔡🌚🌚🌝🌚🌚🌚🌚🌚 \\print space
+📫
+📝
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌚 \\x<a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌚 \\print <
+🔛🔢🌚🌚🌚🌚🌚🌚🌚🌝 \\x=a
+👋🔡🌚🌚🌝🌝🌝🌝🌚🌝 \\print =
+🔛🔢🌚🌚🌚🌚🌚🌚🌝🌚 \\x>a
+👋🔡🌚🌚🌝🌝🌝🌝🌝🌝 \\print >
