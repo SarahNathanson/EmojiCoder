@@ -1,0 +1,19 @@
+{
+  "name": "A browser action with a popup that changes the page font size",
+  "description": "Change the current page font size",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Set this page's font size.",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+	"all_frames": true,
+    "js": [ "jquery.min.js", "popup.js" ],
+	"matches": [ "http://*/*", "https://*/*" ]  
+  }],
+  "manifest_version": 2
+}
