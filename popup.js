@@ -26,18 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
     sizeDivs[i].addEventListener('click', sizeClick);
   }
   
-  chrome.tabs.executeScript(null,
-	{code:"var elems = document.body.getElementsByTagName('*')[1]; elems"}, 
-		function(results){
-			console.log(results);
-			for (var i = 0; i < results.length; i++) {
-				var elem = results[i].outerHTML;
-				var re = ("<.+?>");
-				var match = elem.match(re)[0];
-				console.log(match);
-			}
-		}
-	);
   /*var text="";
   if (window.getSelection) {
         text = window.getSelection().toString();
