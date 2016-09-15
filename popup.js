@@ -5,27 +5,29 @@
 
 function colorClick(e) {
   chrome.tabs.executeScript(null,
-      {code:"document.body.style.backgroundColor='" + e.target.id + "'"});
-  window.close();
+      {code:"$('body').css('background-color', '#" + e.toElement.dataset.color + "');"});
+     // {code:"document.body.style.backgroundColor='#" + e.target.id + "'"});
+  //window.close();
 }
 
 function sizeClick(e) {
 	chrome.tabs.executeScript(null,
-		{code:"document.body.style.fontSize='" + e.target.id + "'"});
-	window.close();
+		{code:"$('body').css('font-size', '" + e.toElement.dataset.size + "');"});
+}
+
+function fontClick(e) {
+	chrome.tabs.executeScript(null,
+		{code:"$('body').css('font-family', '" + e.toElement.dataset.font + "');"});
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var colorDivs = document.querySelectorAll('div.color');
-  for (var i = 0; i < colorDivs.length; i++) {
-    colorDivs[i].addEventListener('click', colorClick);
-  }
+  $(document).ready(function() {
+      $('.color').on('click', colorClick);
+      $('.size').on('click', sizeClick);
+      $('.font').on('click', fontClick);
+  });
   
-  var sizeDivs = document.querySelectorAll('div.size');
-  for (var i = 0; i < sizeDivs.length; i++) {
-    sizeDivs[i].addEventListener('click', sizeClick);
-  }
-  
+
   chrome.tabs.executeScript(null,
 	{code:"var elems = document.body.getElementsByTagName('*')[1]; elems"}, 
 		function(results){
@@ -43,4 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
         text = window.getSelection().toString();
 		console.log(text);
    }*/
+   
+  // chrome.tabs.executeScript(null,
+	// {code:"$('body').css('background-color', '#FCFBE3');"})
+   
 })

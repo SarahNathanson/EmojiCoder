@@ -4,7 +4,7 @@
     <title>Set Page Color Popup</title>
     <style>
     body {
-      overflow: hidden;
+      overflow: scroll;
       margin: 0px;
       padding: 0px;
       background: white;
@@ -24,37 +24,54 @@
       margin-top: 1px;
       background: #cccccc;
     }
+
     div:hover {
       background: #aaaaaa;
     }
+	
     #red {
       border: 1px solid red;
       color: red;
     }
-    #blue {
-      border: 1px solid blue;
-      color: blue;
+   
+  	#blue {
+  		border: 1px solid #0000FF;
+  		color: #0000FF;
+  	}
+
+    #cream {
+      border: 1px solid #FCFBE3;
+      color: #FCFBE3;
     }
-    #green {
-      border: 1px solid green;
-      color: green;
-    }
-    #yellow {
-      border: 1px solid yellow;
-      color: yellow;
-    }
-    </style>
-    <script src="popup.js"></script>
+  	
+  	.size {
+  		border: 1px solid black;
+  	}
+  	
+  	#Arial {
+  		font-family: Arial;
+  	}
+  	
+  	#Roboto {
+  		font-family: Roboto;
+  	}
+  	
+  	#ComicSansSerif {
+  		font-family: "Comic Sans MS";
+  	}
+  </style>
+  <script src='jquery.min.js'></script>
+  <script src="popup.js"></script>
   </head>
   <body>
-    <div class="color" id="red">red</div>
-    <div class="color" id="blue">blue</div>
-    <div class="color" id="green">green</div>
-    <div class="color" id="yellow">yellow</div>
-	<div class="size" id="1.0em">1.0em</div>
-	<div class="size" id="2.0em">2.0em</div>
-	<div class="size" id="3.0em">3.0em</div>
-	<div class="size" id="4.0em">4.0em</div>
-	<div id="celement">N/A</div>
+    <div class="color" data-color="FF0000" id="red">red</div>
+    <div class="color" data-color="0000FF" id="blue">blue</div>
+    <div class="color" data-color="FCFBE3" id="cream">cream</div>
+  	<div class="size" data-size="1.0em" id="1.0em">1.0em</div>
+  	<div class="size" data-size="2.0em" id="2.0em">2.0em</div>
+  	<div class="size" data-size="3.0em" id="3.0em">3.0em</div>
+  	<div class="font" data-font="Arial" id="Arial">Arial</div>
+  	<div class="font" data-font="Roboto" id="Roboto">Roboto</div>
+  	<div class="font" data-font="Comic Sans MS" id="ComicSansSerif">Comic Sans MS</div>
   </body>
 </html>
