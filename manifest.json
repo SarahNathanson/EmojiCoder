@@ -1,20 +1,22 @@
 {
-  "name": "A browser action with a popup that changes the page font size",
-  "description": "Change the current page font size",
+  "name": "Div Highlight",
+  "description": "Change the current page",
   "version": "1.0",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
   ],
   "browser_action": {
-      "default_title": "Set this page's font size.",
+      "default_title": "Highlight divs using the mouse.",
       "default_icon": "icon.png"
   },
-  "content_scripts": [{
-  	"matches": [ "http://*/*", "https://*/*" ],
-    "css": [ "popup.css" ],
-    "js": [ "jquery.min.js", "popup.js" ],
-    "run_at": "document_end",
-    "all_frames": true
-  }],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["core.css"],
+      "js": ["core.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
   "manifest_version": 2
 }
