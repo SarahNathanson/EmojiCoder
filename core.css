@@ -1,0 +1,8 @@
+.crx_mouse_visited {
+  background-color: #e6ffff !important;
+  outline: 1px solid #5166bb !important;
+}
+
+.crx_mouse_clicked {
+	background-color: #fffdd0 !important;
+}
