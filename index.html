@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="button.css">
 		<link href="linedtextarea.css" type="text/css" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 		<script type="text/javascript" src="linedtextarea.js"></script>
 	</head>
 	<body>
@@ -19,6 +21,7 @@
 		</div>
 		<br>
 		<div class="container">
+			<input type="file" id="myFile" onchange="handleFiles(this.files)" size=50/><br><br>
 			Code:<br>
 			<textarea id="code" class="code" rows="20"></textarea>
 			<script type="text/javascript">

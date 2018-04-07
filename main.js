@@ -133,6 +133,12 @@ else if(command=="🔁"){//repeat next line [param] times
 	stringbuilder=stringbuilder.slice(0,stringbuilder.length-1);
 }else if(command=="📨"){//output stringbuilder
 	output.value+=stringbuilder;
+}else if(command=="🙈"){//pushes random num zero to param on to stack
+	stack.push(Math.round(Math.random()*parameter));
+}else if(command=="🙉"){//sets x to random num zero to param
+	x=Math.round(Math.random()*parameter);
+}else if(command=="🦄"){
+	output.value+="🦄";
 }
 else{
 console.log("Incorrect command");
@@ -205,3 +211,21 @@ function downloadFile() {
 
   document.body.removeChild(element);
 }
+
+function handleFiles(){
+	var file = document.getElementById('myFile').files[0];
+	if (file) {
+	console.log(file.name);
+    var reader = new FileReader();
+    reader.readAsText(file, "UTF-8");
+    reader.onload = function (evt) {
+        //document.getElementById("fileContents").innerHTML = evt.target.result;
+        console.log(evt.target.result);
+        code.value=evt.target.result;
+    }
+    reader.onerror = function (evt) {
+        console.log("error");
+    }
+}
+}
+
